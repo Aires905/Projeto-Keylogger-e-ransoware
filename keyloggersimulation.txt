@@ -1,0 +1,13 @@
+# Simulação educativa de captura de entrada
+# NÃO é keylogger real
+
+file_name = "log.txt"
+
+print("Digite algo (simulação de captura): ")
+user_input = input()
+
+# Salvar em arquivo
+with open(file_name, "a") as f:
+    f.write(user_input + "\n")
+
+print("Entrada salva no arquivo (simulação)")
